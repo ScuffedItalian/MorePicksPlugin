@@ -1,0 +1,9 @@
+name: morepicks
+version: '${project.version}'
+main: com.scuffeditalian.morepicks.Morepicks
+api-version: 1.19
+commands:
+  givePick1:
+    aliases:
+      - gp1
+    description: gives item1
