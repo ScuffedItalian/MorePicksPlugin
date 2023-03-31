@@ -24,9 +24,9 @@ public class events implements Listener {
                 Player player = (Player) damageEvent.getDamager();
                 Random random = new Random();
 
-                int randomNumber = random.nextInt(2);
+                int randomNumber = random.nextInt(51);
 
-                if (randomNumber == 1) {
+                if (randomNumber == 12) {
                     event.getDrops().add(itemstacks.ExcaliDust);
                     player.sendMessage(ChatColor.LIGHT_PURPLE + "" + ChatColor.MAGIC + "E" + ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + " Rare Drop! " + ChatColor.LIGHT_PURPLE + "" + ChatColor.MAGIC + "E");
                 }

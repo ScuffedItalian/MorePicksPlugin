@@ -47,11 +47,6 @@ public class itemstacks {
 
         //Recep
 
-        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("excpick"), ExcalipickItem);
-        sr.shape("EEE", "EPE", "EEE");
-        sr.setIngredient('E', ExcaliDust);
-        sr.setIngredient('P', Material.IRON_PICKAXE);
-        Bukkit.getServer().addRecipe(sr);
 
     }
 }
