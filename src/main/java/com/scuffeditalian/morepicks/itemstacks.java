@@ -43,6 +43,20 @@ public class itemstacks {
         ExcalipickItem = new ItemStack(Material.IRON_PICKAXE, 1);
         ItemMeta meta = ExcalipickItem.getItemMeta();
         meta.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "Excalipick 1000");
+        List<String> lore2 = new ArrayList<String>();
+        lore2.add(ChatColor.GRAY + "" + ChatColor.ITALIC + "This pickaxe has lots of history...");
+        lore2.add("");
+        lore2.add(ChatColor.BOLD + "" + ChatColor.LIGHT_PURPLE + "Excalibur VI");
+        lore2.add(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E" + ChatColor.BOLD + "" + ChatColor.LIGHT_PURPLE + "???" + ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E");
+        lore2.add(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E" + ChatColor.BOLD + "" + ChatColor.LIGHT_PURPLE + "???" + ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E");
+        lore2.add(ChatColor.RED + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E" + ChatColor.BOLD + "" + ChatColor.RED + "???" + ChatColor.RED + "" + ChatColor.BOLD + "" + ChatColor.MAGIC + "E");
+        lore2.add("");
+        lore2.add(ChatColor.DARK_GREEN + "Ability ->" + ChatColor.GREEN + " Excavation (RIGHT CLICK)");
+        lore2.add(ChatColor.GRAY + "Gain Haste 2 for 80 Seconds!");
+        lore2.add(ChatColor.GRAY + "Cooldown: 200 Seconds");
+        meta.setLore(lore2);
+        meta.addEnchant(Enchantment.LUCK, 1, true);
+        meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ExcalipickItem.setItemMeta(meta);
 
         //Recep

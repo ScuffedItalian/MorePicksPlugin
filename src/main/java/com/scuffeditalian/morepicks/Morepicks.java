@@ -11,10 +11,11 @@ import com.scuffeditalian.morepicks.itemstacks.*;
 import static com.scuffeditalian.morepicks.itemstacks.ExcaliDust;
 
 public final class Morepicks extends JavaPlugin {
-
+    private static Morepicks instance;
     @Override
     public void onEnable() {
         // Plugin startup logic
+        instance = this;
         itemstacks.ItemInit();
         getCommand("givePick1").setExecutor(new commands());
         getServer().getPluginManager().registerEvents(new events(), this);
@@ -25,6 +26,9 @@ public final class Morepicks extends JavaPlugin {
         sr.setIngredient('P', Material.IRON_PICKAXE);
         Bukkit.getServer().addRecipe(sr);
 
+    }
+    public static Morepicks getInstance() {
+        return instance;
     }
 
     @Override
