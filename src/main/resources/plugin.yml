@@ -3,7 +3,13 @@ version: '${project.version}'
 main: com.scuffeditalian.morepicks.Morepicks
 api-version: 1.19
 commands:
-  givePick1:
+  GiveAllPicks:
     aliases:
-      - gp1
-    description: gives item1
+      - gap
+    description: gives all the pick items of the morepicks plugin
+    permission: op
+  GiveAllDusts:
+    aliases:
+      - gad
+    description: gives all dust items of the Morepicks plugin
+    permission: op
